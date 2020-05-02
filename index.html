@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@1&family=Indie+Flower&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Mon CV</title>
+    <style>
+        body {
+            background-color: #999;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #fff;
+            width: 100%;
+            height: 300px;
+            display: flex;
+        }
+        
+        .children {
+            width: 50px;
+            height: 310px;
+        }
+        
+        .un {
+            background-color: #DC143C;
+            min-width: 343px;
+            width: 343px;
+            max-width: 343px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .deux {
+            background-color: #fff;
+            width: 100%;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        
+        .main {
+            background-color: #fff;
+            width: auto;
+            height: auto;
+            display: flex;
+        }
+        
+        .children1 {
+            width: 50px;
+        }
+        
+        .trois {
+            background-color: #DC143C;
+            min-width: 343px;
+            width: 343px;
+            max-width: 343px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .quatre {
+            background-color: #fff;
+            width: 100%;
+        }
+        
+        .informations {
+            padding-bottom: 300px;
+        }
+        
+        .aproposdemoi {
+            flex: 1;
+        }
+        
+        .loisirs {}
+        
+        .logo {
+            display: flex;
+        }
+        
+        .titre1 {
+            padding: 30px;
+            padding-left: 100px
+        }
+        
+        .titre2 {
+            padding: 30px;
+            padding-left: 100px
+        }
+        
+        .titre3 {
+            padding: 30px;
+            padding-left: 100px
+        }
+        
+        i {
+            font-size: 40px;
+            margin-right: 10px;
+            padding-left: 25px;
+        }
+        
+        h1 .fas {
+            color: #DC143C;
+        }
+        
+        .header h1 {
+            font-size: 55px;
+        }
+        
+        .main h1 {
+            border-bottom: 1px #DC143C solid;
+        }
+        
+        span {
+            color: #DC143C;
+        }
+        
+        .develo {
+            border-bottom: 1.5px #DC143C solid;
+            color: black;
+        }
+        
+        div {
+            font-family: 'Indie Flower', cursive;
+        }
+        
+        h1 {
+            font-family: 'Special Elite', cursive;
+        }
+        
+        h2 {
+            font-family: 'Cuprum', sans-serif;
+        }
+        
+        h3 {
+            box-shadow: black;
+            color: #DC143C;
+            font-family: 'Cuprum', sans-serif;
+            text-align: center;
+            background-color: black;
+            padding-right: 10px;
+        }
+        
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: white solid 1px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin-left: 55px;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+        }
+        
+        li>div:first-child {
+            min-width: 150px;
+            width: 100px;
+            max-width: 100px;
+            padding-bottom: 50px;
+            transform: translate(0, -0.65vh);
+        }
+        
+        li::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            min-width: 10px;
+            max-width: 10px;
+            height: 10px;
+            min-height: 10px;
+            max-height: 10px;
+            background-color: #DC143C;
+            border-radius: 50%;
+            margin-left: 4px;
+            margin-right: 8px;
+        }
+        
+        li:first-child::before {
+            width: 4px;
+            min-width: 4px;
+            max-width: 4px;
+            height: 4px;
+            min-height: 4px;
+            max-height: 4px;
+            border: #DC143C 1px solid;
+            padding: 2px;
+            background-clip: content-box;
+        }
+        
+        div {
+            transform: translate(0, -0.65vh);
+            font-size: 20px;
+        }
+        
+        div .trois {
+            text-align: center;
+        }
+        
+        div .quatre {
+            font-size: 30px;
+        }
+        
+        @media screen and (max-width: 623px) {
+            .header {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            .children.un {
+                background-color: #DC143C;
+                width: 70%;
+            }
+            .children.deux {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 800px) {
+            body {
+                height: 100%;
+            }
+            .header {
+                display: flex;
+                flex-direction: row;
+            }
+            .un {
+                width: 100%;
+            }
+            .main {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
+            .children.un {
+                width: 100%;
+                min-width: unset;
+                max-width: unset;
+            }
+            .children1.trois {
+                width: 100%;
+                min-width: unset;
+                max-width: unset;
+            }
+            img {
+                margin-top: 37px;
+                width: 60%;
+            }
+            .trois {
+                width: 100%;
+            }
+            img {
+                margin-top: 37px;
+                width: 60%;
+            }
+            img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+            li {
+                font-size: 10px;
+                margin-left: 0;
+                margin-right: 0px;
+            }
+            li>div:first-child {
+                min-width: 50px;
+                width: 160px;
+                max-width: 160px;
+                padding-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 80px;
+                transform: translate(0, -0.50vh);
+            }
+            li::before {
+                content: "";
+                display: inline-block;
+                width: 10px;
+                min-width: 10px;
+                max-width: 10px;
+                height: 10px;
+                min-height: 10px;
+                max-height: 5px;
+                background-color: #DC143C;
+                border-radius: 50%;
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+            div li {
+                min-width: 200px;
+                width: 200px;
+            }
+            div {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="children un">
+            <img src="img/james.jpg">
+        </div>
+        <div class="children deux">
+            <h1><span class="color">BILAL</span> EL IMRANI</h1>
+            <div><span class="develo">Dévelo</span>ppeur web freelance</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="children1 trois">
+            <div class="informations">
+                <h3>INFORMATIONS</h3>
+                <div><strong>Adresse</strong></br>4 rue machin, Nevada</div>
+                </br>
+                <div><strong>Tél</strong></br>07 70 02 95 00</div>
+                </br>
+                <div><strong>Mail</strong></br>bilal.elimrani@icloud.com</div>
+                </br>
+                <div><strong>Age</strong></br>29 ans</div>
+                </br>
+                <div><strong>Ville</strong></br>Las Vegas</div>
+                </br>
+                <div><strong>Permis</strong></br>B</div>
+            </div>
+            <div class="aproposdemoi">
+                <h3>A PROPOS DE MOI</h3>
+                <div><em>En quelques mot...</em></div>
+                </br>
+                <div>Organisé</div>
+                </br>
+                <div>Optimiste</div>
+                </br>
+                <div>Déterminé</div>
+                </br>
+                <div>Flexible</div>
+                </br>
+                <div>Généreux</div>
+                </br>
+            </div>
+            <div class="loisirs">
+                <h3>LOISIRS</h3>
+                <div class="logo">
+                    <i class="fas fa-plane"></i>
+                    <i class="fas fa-cocktail"></i>
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+            </div>
+        </div>
+        <div class="children1 quatre">
+            <div class="titre1">
+                <h1><i class="fas fa-graduation-cap"></i>FORMATION</h1>
+            </div>
+            <ul>
+                <li>
+                    <div><strong>Mars 2020</br>(En cours)</strong></div>
+                    <div> Formation de développeur web (Bac+2) chez <strong>OpenClassrooms</strong></div>
+                </li><br/>
+                <li>
+                    <div><strong>Juin 2018</strong></div>
+                    <div>Formation CACES (1-3-5) à <strong>l'ECF</strong> de Molsheim</div>
+                </li><br/>
+                <li>
+                    <div><strong>2011-2013</strong></div>
+                    <div>BTS Technico-Commercial(Option énergie renouvelable) au lycée <strong>Henri Meck</strong></div>
+                </li><br/>
+                <li>
+                    <div><strong>2009-2010</strong></div>
+                    <div>Baccalauréat STG(Marketing) au lycée <strong>Henri Meck</strong></div>
+                </li> <br/><br/>
+            </ul>
+            <div class="titre2">
+                <h1><i class="fas fa-briefcase"></i>EXPERIENCE PROFESSIONNELLE</h1>
+            </div>
+            <ul>
+                <li>
+                    <div><strong>03/2019 01/2020</div></strong>
+                        <div>Magasinier/Préparateur chez <strong>MECATHERM</strong>, Préparation de commmandes avec liste, diverses tâches de manutention.</div>
+                </li><br/>
+                <li>
+                    <div><strong>10/2018 11/2018</div></strong>
+                        <div>Magasinier/Préparateur chez <strong>MERCK</strong>, Préparation de commmandes avec scan, diverses tâches de manutention.</div>
+                </li><br/>
+                <li>
+                    <div><strong>08/2010 10/2010</div></strong>
+                        <div>Cariste chez <strong>NOVARES</strong>, Approvisionnement pour la production, enlèvement de produits fini/semi-finis.</div>
+                </li><br/>
+                <li>
+                    <div><strong>06/2016 12/2017</div></strong>
+                        <div>Cariste chez <strong>GAGGENAU</strong>, Approvisionnement pour la production de fours, enlèvement de produits fini/semi-finis.</div>
+                </li><br/>
+                <li>
+                    <div><strong>06/2016 12/2017</div></strong>
+                        <div>Commercial chez <strong>France SOLAR</strong>, Commercialisation de panneaux photovoltaïques pour les particuliers.</div>
+                </li><br/>
+            </ul>
+            <div class="titre3">
+                <h1><i class="fas fa-atlas"></i>COMPETENCES</h1>
+            </div>
+            <ul>
+                <li>
+                    <div><strong>ANGLAIS</strong></div>
+                    <div> Débutant (En apprentissage)</div>
+                </li><br/>
+                <li>
+                    <div><strong>ARABE</strong></div>
+                    <div>Courant (Langue maternelle)</div>
+                </li><br/>
+                <li>
+                    <div><strong>FRANCAIS</strong></div>
+                    <div>Courant (Langue maternelle)</div>
+                </li><br/>
+                <li>
+                    <div><strong>HTML </strong></div>
+                    <div> Débutant (En apprentissage)</div>
+                </li><br/>
+                <li>
+                    <div><strong>CSS</strong></div>
+                    <div>Débutant (En apprentissage)</div>
+                </li><br/>
+            </ul>
+            </div>
+            </div>
+</body>
+
+</html>
